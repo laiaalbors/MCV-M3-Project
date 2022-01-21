@@ -1,0 +1,37 @@
+1
+Building MLP model...
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+first (Reshape)              (None, 3072)              0         
+_________________________________________________________________
+second (Dense)               (None, 2048)              6293504   
+_________________________________________________________________
+dense (Dense)                (None, 1024)              2098176   
+_________________________________________________________________
+dense_1 (Dense)              (None, 8)                 8200      
+=================================================================
+Total params: 8,399,880
+Trainable params: 8,399,880
+Non-trainable params: 0
+_________________________________________________________________
+None
+Done!
+
+WARNING: model file /home/group04/M3/w3/models/mlp_depth1.h5 exists and will be overwritten!
+
+Start training...
+
+Found 1881 images belonging to 8 classes.
+Found 807 images belonging to 8 classes.
+Done!
+
+Saving the model into /home/group04/M3/w3/models/mlp_depth1.h5 
+
+Done!
+
+prediction for image /home/mcv/datasets/MIT_split/test/coast/cdmc900.jpg
+[[0.5799717  0.         0.52045953 ... 0.         0.24773544 0.        ]]
+Done!

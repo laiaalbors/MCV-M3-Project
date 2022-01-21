@@ -40,7 +40,7 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 print(model.summary())
-plot_model(model, to_file='modelMLP.png', show_shapes=True, show_layer_names=True)
+plot_model(model, to_file=f'./plots/modelMLP_depth{depth_layers}.png', show_shapes=True, show_layer_names=True)
 
 print('Done!\n')
 
@@ -97,7 +97,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
-plt.savefig('accuracy.jpg')
+plt.savefig(f'./plots/accuracy_depth{depth_layers}.jpg')
 plt.close()
   # summarize history for loss
 plt.plot(history.history['loss'])
@@ -106,7 +106,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
-plt.savefig('loss.jpg')
+plt.savefig(f'./plots/loss_depth{depth_layers}.jpg')
 
 #to get the output of a given layer
  #crop the model up to a certain layer
