@@ -16,7 +16,7 @@ import numpy as np
 IMG_SIZE    = 32
 BATCH_SIZE  = 16
 DATASET_DIR = '/home/mcv/datasets/MIT_split'
-depth_layers = os.getenv('DEPTH_LAYERS')
+depth_layers = int(os.getenv('DEPTH_LAYERS'))
 print(depth_layers)
 MODEL_FNAME = f'/home/group04/M3/w3/models/mlp_depth{depth_layers}.h5'
 
