@@ -31,5 +31,5 @@ Saving the model into /home/group04/M3/w3/models/mlp_width8192.h5
 Done!
 
 prediction for image /home/mcv/datasets/MIT_split/test/coast/cdmc900.jpg
-[[0.         0.38262448 0.09469721 ... 0.         0.         0.        ]]
+[[0.         0.18491682 0.         ... 0.         0.         0.39518338]]
 Done!

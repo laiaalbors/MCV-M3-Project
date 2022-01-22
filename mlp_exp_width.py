@@ -95,7 +95,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
-plt.savefig('./plots/accuracy_width{width_layer}.jpg')
+plt.savefig(f'./plots/accuracy_width{width_layer}.jpg')
 plt.close()
   # summarize history for loss
 plt.plot(history.history['loss'])
@@ -104,7 +104,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'validation'], loc='upper left')
-plt.savefig('./plots/loss_width{width_layer}.jpg')
+plt.savefig(f'./plots/loss_width{width_layer}.jpg')
 
 #to get the output of a given layer
  #crop the model up to a certain layer
